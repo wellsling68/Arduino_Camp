@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-color: #191a1e;
+} 
+
+header{
+    box-shadow: 2px .5px 25px 2px #212121;
+    background-color: #212121;
+    height:60px;
+    align-items: center;
+}
+
+header::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+nav{
+    float:left;
+}
+
+nav ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+nav li{
+    margin-top:0px;
+    margin-left: 75px;
+    padding-top:20px;
+    display:inline-block;
+    position:relative;
+}
+
+nav a{
+    color:rgba(255, 255, 255, 0.64);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+    font-family: Quicksand, serif;
+}
+
+nav a:hover{
+    color:rgba(145, 145, 145, 0.822)
+}
+
+nav a::before{
+    width:100%;
+    height: 3px;
+    display:block;
+    content:' ';
+    background-color:rgba(183, 183, 183, 0.64);
+    
+    position:absolute;
+    top:0;
+    width:0%;
+    transition: width .4s;
+}
+
+nav a:hover::before{
+    width:100%;
+}
+
+#title{
+    font-size: 80px;
+    color:rgba(235, 235, 235, 0.992);
+    font-family:Quicksand, serif;
+    text-align:left;
+    margin-top:15vw;
+    margin-left:8vw;
+    margin-bottom:2vw;
+}
+
+.intro{
+    text-align: left;
+    margin-left:8vw;
+    font-family:Quicksand, serif;
+    color:rgba(235, 235, 235, 0.992);
+    margin-bottom:1vw;
+    margin-top:1vw;
+    font-size: 38px;
+}
+
+#spacing{
+    margin-bottom:15vw;
+}
+
+.pic{
+    margin-top:3vw;
+}
+
+#arduinopic{
+    margin-right:8vw;
+    width:450px;
+    float:right;
+}
+
+#idepic{
+    margin-left:5px;
+    margin-top:4vw;
+    padding-right:5vw;
+    padding-left:2.5vw;
+    width:620px;
+    float:left;
+}
+
+#locationpic{
+    padding-top:2vw;
+    padding-right:2vw;
+    padding-bottom:2vw;
+    padding-left:1vw;
+    margin-top:-2vw;
+    margin-right:8vw;
+    margin-left:1vw;
+    width:540px;
+    float:right;
+}
+
+#moreinfo{
+    padding-top:5vw;
+}
+
+.details{
+    color:rgba(235, 235, 235, 0.992);
+    font-family:Quicksand, serif;
+    text-align:left;
+    margin-top:15vw;
+    margin-left:7.5vw;
+    margin-bottom:2vw;
+}
+
+#tuning{
+    padding-right:2.5vw;
+}
+
+.dethead{
+    font-size:42px;
+}
+
+.list{
+    font-size:28px;
+}
+
+.listspacing{
+    margin-top:2vw;
+    margin-bottom:2vw;
+}
+
+.learnmorelink{
+    color:rgba(255, 255, 255, 0.64);
+    text-decoration: none;
+    font-size:16px;
+    font-family: Quicksand, serif;
+    text-align:center;
+    display:block;
+    margin-bottom:1vw;
+}
+
+#learnsize{
+    font-size:20px;
+}
+
+#spacingbottom{
+    margin-bottom:14vw;
+}

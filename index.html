@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo:wght@200&family=Quicksand:wght@500&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arduino Camp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -19,46 +23,59 @@
         </div>
 
     </header>
-
-    <h1>Arduino Camp</h1>
-    <h2>Build Your Own Engineering Project while Solving Real-World Problems!</h2>
-    
-    <div id="details">
-        <h2>What is Arduino Camp</h2>
-        <h3>
-            <ul>
-                <li>A one week camp for students looking to learn engineering basics</li>
-                <li>For students 6th grade and above</li>
-                <li>Assumes no prior coding experience</li>
-                <li>Maximum of 10 stuents</li>
-            </ul>
-        </h3>
-    </div>
-    
-
-    <div id="learn">
-        <h2>What will you learn about?</h2>
-        <h3>
-            <ul>
-                <li>Gain hands-on experience with Arduino hardware and software.</li>
-                <li>Gain hardware skills like building circuits, designing schematics, and wiring electronics.</li>
-                <li>Learn to apply C++ in the Arduino development software to program your creation.</li>
-                <li>Build their own project tailored to solving a real-world problem, and present it to the class.</li>
-            </ul>
-        </h3>
-    </div>
    
+    <div>
+        <h1 id="title">Arduino Camp</h1>
+        <h2 class="intro">Build Your Own Engineering Project while</h2>
+        <h2 class="intro" id="spacing">Solving Real-World Problems!</h2>
+    </div>
+    
+    <div id="learnmore">
+        <a href="#moreinfo" class="learnmorelink" id="learnsize">Click to learn more</a>
+        <a href="#moreinfo" class="learnmorelink">▼</a>
+    </div>
 
-    <div id="time">
-        <h2>When and where is the course?</h2>
+    <div class="details" id="moreinfo">
+        <img src="arduino.jpg" alt="arduino" class="pic" id="arduinopic">
+        <h2 class="dethead">What is Arduino Camp</h2>
         <h3>
-            <ul>
-                <li>Monday, date, to Friday, date</li>
-                <li>Mornings, 9 AM to 12 PM</li>
-                <li>Location: 20432 Silverado Blvd, Cupertino, CA</li>
+            <ul class="list">
+                <li class="listspacing">A one week camp for students looking to learn engineering basics</li>
+                <li class="listspacing">For students 6th grade and above</li>
+                <li class="listspacing">Assumes no prior coding experience</li>
+                <li class="listspacing">Maximum of 10 stuents</li>
+            </ul>
+        </h3>
+    </div>
+    
+    <div>
+        <img src="ide.jpg" alt="arduino ide" class="pic" id="idepic">
+        <div class="details" id="tuning">
+            <h2 class="dethead">What will you learn about?</h2>
+            <h3>
+                <ul class="list" >
+                    <li class="listspacing">Gain hands-on experience with Arduino hardware and software.</li>
+                    <li class="listspacing">Gain hardware skills like building circuits, designing schematics, and wiring electronics.</li>
+                    <li class="listspacing">Learn to apply C++ in the Arduino development software to program your creation.</li>
+                    <li class="listspacing">Build their own project tailored to solving a real-world problem, and present it to the class.</li>
+                </ul>
+            </h3>
+        </div>
+    </div>
+    
+
+    <div class="details">
+        <img src="location.jpg" alt="location" class="pic" id="locationpic">
+        <h2 class="dethead">When and where is the course?</h2>
+        <h3 id="spacingbottom">
+            <ul class="list">
+                <li class="listspacing">Monday, date, to Friday, date</li>
+                <li class="listspacing">Mornings, 9 AM to 12 PM</li>
+                <li class="listspacing">Location: 20432 Silverado Blvd, Cupertino, CA</li>
             </ul>
         </h3>
     </div>
     
 </body>
+<script src="index.js"> </script>
 </html>
