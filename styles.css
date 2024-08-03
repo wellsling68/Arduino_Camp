@@ -91,6 +91,11 @@ nav a:hover::before{
     margin-bottom:15vw;
 }
 
+#moreinfo{
+    padding-top:5vw;
+    cursor: pointer;
+}
+
 .pic{
     margin-top:3vw;
 }
@@ -120,10 +125,6 @@ nav a:hover::before{
     margin-left:1vw;
     width:540px;
     float:right;
-}
-
-#moreinfo{
-    padding-top:5vw;
 }
 
 .details{
