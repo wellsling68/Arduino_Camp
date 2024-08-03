@@ -96,6 +96,13 @@ nav a:hover::before{
     cursor: pointer;
 }
 
+hr{
+    margin-top:5vw;
+    border-color: #212121;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
 .pic{
     margin-top:3vw;
 }
@@ -169,4 +176,8 @@ nav a:hover::before{
 
 #spacingbottom{
     margin-bottom:14vw;
+}
+
+#moreinfo{
+    margin-top:-1vw;
 }
