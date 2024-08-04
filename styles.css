@@ -93,7 +93,7 @@ nav a:hover::before{
 }
 
 #moreinfo{
-    padding-top:5vw;
+    padding-top:8vw;
     cursor: pointer;
 }
 
@@ -177,6 +177,18 @@ hr{
 
 #spacingbottom{
     margin-bottom:14vw;
+}
+
+h4{
+    text-align: left;
+    margin-left:8vw;
+    font-family:Quicksand, serif;
+    color:rgba(235, 235, 235, 0.992);
+    margin-bottom:3vw;
+    margin-top:1vw;
+    margin-right:10vw;
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 #moreinfo{
