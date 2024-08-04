@@ -78,6 +78,17 @@ h1{
     margin-bottom:1vw;
 }
 
+#about{
+    margin-right:10vw;
+    margin-left:7vw;
+    margin-top:3vw;
+    font-size: 22px;
+}
+
+#theteam{
+    margin-bottom:3vw;
+}
+
 h2{
     text-align: left;
     margin-left:12vw;
@@ -122,15 +133,43 @@ h4{
     font-weight: lighter;
 }
 
-#about{
+.leftportfoliotext{
+    float:left;
+    display:inline;
+    margin-left:10vw;
     margin-right:10vw;
-    margin-left:7vw;
-    margin-top:3vw;
-    font-size: 22px;
+    margin-bottom:10vw;
+    overflow: auto
+}
+.leftportfolio{
+    float:left;
+    border-radius: 10%;
 }
 
-#theteam{
-    margin-bottom:3vw;
+.centerportfoliotext{
+    float:center;
+    display:inline;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom:10vw;
+    overflow: auto
+}
+.centerportfolio{
+    float:center;
+    border-radius: 10%;
+}
+
+.rightportfoliotext{
+    float:right;
+    display:inline;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-bottom:10vw;
+    overflow: auto
+}
+.rightportfolio{
+    float:right;
+    border-radius: 10%;
 }
 
 #spacingbottom{

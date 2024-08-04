@@ -68,7 +68,7 @@ nav a:hover::before{
     width:100%;
 }
 
-#title{
+h1{
     font-size: 80px;
     color:rgba(235, 235, 235, 0.992);
     font-family:Quicksand, serif;

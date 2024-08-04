@@ -86,7 +86,7 @@ h2{
     margin-bottom:1vw;
     padding-top:6vw;
     margin-top:4vw;
-    font-size: 38px;
+    font-size: 34px;
     padding-bottom:1vw;
 }
 
@@ -115,7 +115,7 @@ h3{
     color:rgba(235, 235, 235, 0.992);
     margin-top:1vw;
     margin-right:10vw;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -126,7 +126,7 @@ h3{
     color:rgba(235, 235, 235, 0.992);
     margin-top:1vw;
     margin-right:.5vw;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: lighter;
     display:inline;
     text-decoration: none;
