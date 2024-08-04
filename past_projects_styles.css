@@ -4,8 +4,10 @@ html{
 
 body{
     margin: 0px;
-    background-image: linear-gradient(#191a1e, #191a1ee6);
+    background-image: linear-gradient(#191a1e, #191a1ef1);
     /*background-color: #191a1e;*/
+    font-family: Arial, sans-serif;
+    
 } 
 
 header{
@@ -78,15 +80,23 @@ h1{
     margin-bottom:1vw;
 }
 
-#about{
+#desc{
+    text-align: left;
+    margin-left:7vw;
+    font-family:Quicksand, serif;
+    color:rgba(235, 235, 235, 0.992);
+    margin-bottom:1vw;
+    padding-top:6vw;
+    margin-top:4vw;
+    font-size: 25px;
+    padding-bottom:1vw;
+    font-weight: lighter;
     margin-right:10vw;
     margin-left:7vw;
     margin-top:3vw;
-    font-size: 22px;
-}
-
-#theteam{
-    margin-bottom:3vw;
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top:0vw;
 }
 
 h2{
@@ -98,20 +108,8 @@ h2{
     margin-top:1vw;
     font-size: 34px;
 }
-#spacing{
-    margin-bottom:15vw;
-}
-#titles{
-    text-align: left;
-    font-family:Average, serif;
-    color:rgba(235, 235, 235, 0.992);
-    margin-bottom:1vw;
-    margin-top:1vw;
-    font-size: 28px;
-}
 
-
-h3{
+p{
     text-align: left;
     margin-left:9vw;
     font-family:Quicksand, serif;
@@ -134,44 +132,57 @@ h4{
     font-size: 18px;
     font-weight: lighter;
 }
-
-.leftportfoliotext{
-    float:left;
-    display:inline;
-    margin-left:10vw;
-    margin-right:10vw;
-    margin-bottom:10vw;
-    overflow: auto
-}
-.leftportfolio{
-    float:left;
-    border-radius: 10%;
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: max width for larger screens */
+    padding: 20px;
+    margin-left:8vw;
+    box-sizing: border-box;
 }
 
-.centerportfoliotext{
-    float:center;
-    display:inline;
-    margin-left:10vw;
-    margin-right:10vw;
-    margin-bottom:10vw;
-    overflow: auto
-}
-.centerportfolio{
-    float:center;
-    border-radius: 10%;
+.section {
+    flex: 4vw; /* Equal width for each section */
+    flex-wrap: nowrap;
+    /*background: rgb(66, 66, 66);*/
+    padding: 20px;
+    box-sizing: border-box;
+    /*border: 1px solid #333333;*/
+    margin: 0 10px; /* Spacing between sections */
+    text-align: center;
+    margin-right:2vw;
+    margin-left:2vw;
+    border-radius: 8px; /* Optional: rounded corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); *//* Optional: shadow effect */
 }
 
-.rightportfoliotext{
-    float:right;
-    display:inline;
-    margin-left:10vw;
-    margin-right:10vw;
-    margin-bottom:10vw;
-    overflow: auto
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 7%;
 }
-.rightportfolio{
-    float:right;
-    border-radius: 10%;
+
+.section-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.section-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.section-link {
+    font-size: 16px;
+    color:rgba(235, 235, 235, 0.992);
+    text-decoration: none;
+}
+
+
+.section-link:hover {
+    text-decoration: underline;
 }
 
 #spacingbottom{
