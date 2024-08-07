@@ -99,6 +99,15 @@ h1{
     padding-top:0vw;
 }
 
+#bruh{
+    align-self:center;
+    float:center;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    padding-bottom:3vw;
+}
+
 h2{
     text-align: left;
     margin-left:12vw;
