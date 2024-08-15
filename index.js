@@ -1,6 +1,5 @@
 const chk = document.getElementById('chk');
 
-// Function to apply the theme based on the stored preference
 function applyTheme(theme) {
     if (theme === 'light') {
         document.body.classList.add('light');
