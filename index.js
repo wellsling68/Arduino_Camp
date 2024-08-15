@@ -1,29 +1,27 @@
-const sunMoonContainer = document.querySelector('.sun-moon-container');
+const chk = document.getElementById('chk');
 
-// Function to apply the theme with optional transition delay
-function applyTheme(theme, withTransitionDelay = true) {
-  if (withTransitionDelay) {
-    document.body.style.setProperty('--transition-delay', '1s');
-  } else {
-    document.body.style.setProperty('--transition-delay', '0s');
-  }
-  document.body.classList.toggle('light', theme === 'light');
-  
-  const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation'));
-  sunMoonContainer.style.setProperty('--rotation', currentRotation + 180)
+// Function to apply the theme based on the stored preference
+function applyTheme(theme) {
+    if (theme === 'light') {
+        document.body.classList.add('light');
+        chk.checked = true;
+    } else {
+        document.body.classList.remove('light');
+        chk.checked = false;
+    }
 }
 
-// Check for saved theme in localStorage on page load
-window.onload = function() {
-  const savedTheme = localStorage.getItem('theme') || 'dark'; // Default to 'dark' if no theme is saved
-  applyTheme(savedTheme, false); // Apply theme without transition delay on page load
-};
-
-// Toggle theme and save preference in localStorage
-document.querySelector('.theme-toggle-button').addEventListener('click', () => {
-  const isLight = document.body.classList.toggle('light');
-  const newTheme = isLight ? 'light' : 'dark';
-  localStorage.setItem('theme', newTheme);
-  
-  applyTheme(newTheme, true); // Apply theme with transition delay on toggle
+// Event listener for the checkbox
+chk.addEventListener('change', () => {
+    if (chk.checked) {
+        document.body.classList.add('light');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
+    }
 });
+
+// On page load, apply the theme based on the stored preference
+const storedTheme = localStorage.getItem('theme') || 'dark';
+applyTheme(storedTheme);
