@@ -291,3 +291,18 @@ h4{
 	transform: translateX(0px);
 	transition: transform 0.3s linear;
 }
+
+.section-link {
+    font-size: 16px;
+    color:var(--text-color);
+    transition: var(--transition-delay);
+    text-decoration: none;
+    padding:.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+.border{
+    border:2px solid var(--text-color);
+    transition: var(--transition-delay);
+    border-radius:10px 10px;
+}

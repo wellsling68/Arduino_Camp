@@ -215,6 +215,7 @@ h4{
 
 .section-link {
     font-size: 16px;
+    font-family: Quicksand, serif;
     color:var(--text-color);
     transition: var(--transition-delay);
     text-decoration: none;
